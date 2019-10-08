@@ -1,46 +1,49 @@
-# Activate and configure extensions
-# https://middlemanapp.com/advanced/configuration/#configuring-extensions
-
 activate :autoprefixer do |prefix|
   prefix.browsers = "last 2 versions"
 end
 
-# Layouts
-# https://middlemanapp.com/basics/layouts/
+activate :sprockets
 
-# Per-page layout changes
 page '/*.xml', layout: false
 page '/*.json', layout: false
 page '/*.txt', layout: false
 
-# With alternative layout
-# page '/path/to/file.html', layout: 'other_layout'
+configure :build do
+  activate :minify_css
+  activate :minify_javascript
+  activate :asset_hash
+  activate :relative_assets
+  set :relative_links, true
+end
 
-# Proxy pages
-# https://middlemanapp.com/advanced/dynamic-pages/
+activate :deploy do |deploy|
+  deploy.build_before = true
+  deploy.deploy_method = :git
+end
 
-# proxy(
-#   '/this-page-has-no-template.html',
-#   '/template-file.html',
-#   locals: {
-#     which_fake_page: 'Rendering a fake page with a local variable'
-#   },
-# )
+# module Rack
 
-# Helpers
-# Methods defined in the helpers block are available in templates
-# https://middlemanapp.com/basics/helper-methods/
+#   class TryStatic
 
-# helpers do
-#   def some_helper
-#     'Helping'
+#     def initialize(app, options)
+#       @app = app
+#       @try = ['', *options.delete(:try)]
+#       @static = ::Rack::Static.new(lambda { [404, {}, []] }, options)
+#     end
+
+#     def call(env)
+#       orig_path = env['PATH_INFO']
+#       found = nil
+#       @try.each do |path|
+#         resp = @static.call(env.merge!({'PATH_INFO' => orig_path + path}))
+#         break if 404 != resp[0] && found = resp
+#       end
+#       found or @app.call(env.merge!('PATH_INFO' => orig_path))
+#     end
 #   end
 # end
 
-# Build-specific configuration
-# https://middlemanapp.com/advanced/configuration/#environment-specific-settings
+# use Rack::TryStatic, :root => "build", :urls => %w[/], :try => ['.html', 'index.html', '/index.html']
 
-# configure :build do
-#   activate :minify_css
-#   activate :minify_javascript
-# end
+# Run your own Rack app here or use this one to serve 404 messages:
+
