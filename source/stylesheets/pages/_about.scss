@@ -1,0 +1,133 @@
+// #about {
+//   height: 100vh;
+//   display: flex;
+//   align-items: center;
+//   justify-content: space-around;
+//   text-align: center;
+//   background-image: linear-gradient(0deg, white 50%, #F4F4F4 50%);
+//   img {
+//     width: 150px;
+//     box-shadow: 1px 1px 5px rgba(0,0,0,0.2);
+//   }
+//   h1 {
+//     font-size: 30px;
+//     font-weight: bolder;
+//     margin-bottom: 30px;
+//     margin-top: 0px;
+//     color: rgba(0,0,0,0.7);
+//   }
+//   h2 {
+//     font-size: 17px;
+//     font-weight: bold;
+//     color: rgba(0,0,0,0.6);
+//   }
+//   a {
+//     color: rgba(0,0,0,0.25);
+//     font-weight: bold;
+//     letter-spacing: -0.5px;
+//     font-size: 15px;
+//   }
+
+.banner {
+  text-align: center;
+}
+
+.banner-img {
+  background-image: url('https://res.cloudinary.com/pimpi1/image/upload/c_lfill,h_505,w_1143/v1561316737/sito/About/1.ABOUT_iwpzk2.jpg');
+  background-size: cover;
+  background-position: center;
+  background-repeat:no-repeat;
+  padding: 150px;
+  max-width: 100%;
+  height: auto;
+  margin-bottom: 48px;
+}
+
+.banner-about {
+  position: relative;
+}
+.banner-about-content {
+  position: absolute;
+  right: 15%;
+  left: 15%;
+}
+
+.banner-about-profile {
+  padding-top: 16px;
+  padding-right: 16px;
+  padding-left: 16px;
+  padding-bottom: 0px;
+  margin-bottom: 0px;
+  .container {
+    padding-bottom: 0px;
+  }
+}
+
+.banner-about-company {
+  padding-top: 0px;
+  padding-right: 16px;
+  padding-left: 16px;
+  padding-bottom: 16px;
+  margin-top: 0px;
+}
+
+.kill-padding-lr {
+  padding-left: 0px;
+  padding-right: 0px;
+}
+
+#about-title {
+  margin: 0;
+  color: white;
+  text-shadow: 1px 1px 3px rgba(0,0,0,0.1);
+  font-size: 40px;
+  font-weight: bold;
+  margin-bottom: 8px;
+}
+
+#about-text {
+  p {
+  font-size: 20px;
+  color: white;
+  opacity: 0.8;
+  text-shadow: 1px 1px 3px rgba(0,0,0,0.1);
+  }
+}
+
+
+@media (max-width: 768px) {
+  #about-title > h3 {
+    font-size: 24px;
+    opacity: 1;
+  }
+
+  #about-text > p {
+    font-size: 16px;
+    opacity: 0.8;
+  }
+}
+
+
+@media (max-width: 540px) {
+  #about-title > h3 {
+    font-size: 19px;
+    opacity: 1;
+  }
+
+  #about-text > p {
+    font-size: 10px;
+    opacity: 0.8;
+  }
+}
+
+.content-about {
+  padding: 20px;
+}
+
+.box-content {
+ margin: 18px;
+}
+
+.profile {
+  height: 972px;
+}

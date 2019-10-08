@@ -1,0 +1,41 @@
+.row {
+  margin-right: 0px;
+  margin-left: 0px;
+}
+
+.footer-top {
+  background: #121212;
+}
+
+.footer-top-content {
+  display: flex;
+  align-item: center;
+  padding-top: 72px;
+  padding-bottom: 72px;
+
+  h5 {
+    color: #ffff;
+    font-size: 16px;
+    margin: 0 0 22px;
+  }
+
+  p {
+    color: #b2b2b2;
+    font-size: 16px;
+  }
+
+  a {
+    text-decoration: none;
+    color: #b2b2b2;
+    font-size: 16px;
+
+    &:hover {
+      opacity: 1;
+      color: #ffff;
+    }
+  }
+}
+
+#ul-margin-right{
+  margin-right: 32px;
+}

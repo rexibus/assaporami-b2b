@@ -1,0 +1,147 @@
+// #home {
+//   background-color: #D23333;
+//   color: white;
+//   height: 100vh;
+//   display: flex;
+//   align-items: center;
+//   justify-content: space-around;
+//   text-align: center;
+//   p {
+//     margin-top: 1.5em;
+//   }
+//   a {
+//     color: rgba(0,0,0,0.4);
+//     font-weight: bold;
+//     font-size: 16px;
+//   }
+// }
+
+// .banner {
+//   background-size: cover;
+//   background-position: center;
+//   padding: 150px 0;
+// }
+
+// .banner h1 {
+//   margin: 0;
+//   color: white;
+//   text-shadow: 1px 1px 3px rgba(0,0,0,0.2);
+//   font-size: 32px;
+//   font-weight: bold;
+// }
+
+// .banner p {
+//   font-size: 20px;
+//   color: white;
+//   opacity: .7;
+//   text-shadow: 1px 1px 3px rgba(0,0,0,0.2);
+// }
+//  .carroussel-height {
+//   height: 600px;
+//   display: flex;
+//   align-items: center;
+//   justify-content: center;
+//  }
+
+// #carousel-vertical-align {
+//   display: flex;
+//   align-items: center;
+//   justify-content: center;
+//   height: 59%;
+// }
+
+// .carousel-control-prev {
+//   width: 6%;
+// }
+
+// .carousel-control-next {
+//   width: 6%;
+// }
+
+// .carousel-control-prev-icon {
+//   margin-left: 10px;
+// }
+
+// .carousel-control-next-icon {
+//   margin-right: 10px;
+// }
+.super-wrapper {
+  position: relative;
+}
+
+.carousel-inner {
+
+  h3 {
+    color: white;
+    font-size: 40px;
+    opacity: 0.9;
+    text-shadow: 1px 1px 3px rgba(0,0,0,0.2);
+  }
+
+  p {
+    color: white;
+    font-size: 20px;
+    opacity: 0.7;
+    text-shadow: 1px 1px 3px rgba(0,0,0,0.2);
+  }
+}
+
+.padding-top-bottom {
+  padding-top: 60px;
+  padding-bottom: 60px;
+}
+
+#marbo-60 {
+  margin-bottom: 60px;
+}
+
+p {
+  color: #818181;
+}
+
+.content-presentation-sub-title {
+  margin-bottom: 40px;
+}
+
+.content-presentation-text-title {
+  margin-top: 32px;
+  margin-bottom: 24px;
+}
+
+.cards-events {
+  display: grid;
+  grid-gap: 16px;
+  grid-template-columns: 1fr 1fr 1fr;
+  margin: 16px;
+}
+
+@media (max-width: 960px) {
+  .cards-events {
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+
+}
+
+@media (max-width: 720px) {
+  .cards-events {
+    grid-template-columns: 1fr 1fr;
+  }
+
+}
+
+@media (max-width: 540px) {
+  .cards-events {
+    grid-template-columns: 1fr;
+  }
+  .carousel-caption > h3 {
+    font-size: 19px;
+    opacity: 1;
+  }
+
+  .carousel-caption > p {
+    font-size: 10px;
+    opacity: 0.8;
+  }
+}
+
+

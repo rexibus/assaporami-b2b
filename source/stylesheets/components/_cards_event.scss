@@ -1,0 +1,60 @@
+// cards-event - find them in the home page
+// .card-event {
+//   background-size: cover;
+//   background-position: center;
+//   height: 250px;
+//   border-radius: 1px;
+//   box-shadow: 0 0 10px rgba(0,0,0,0.2);
+//   display: flex;
+//   align-items: center;
+//   justify-content: space-around;
+//   font-size: 22px;
+//   color: white;
+//   font-weight: bolder;
+//   text-shadow: 0 0 10px rgba(0,0,0,0.7);
+// }
+
+.cards-event {
+  margin-top: 56px;
+}
+.card-event {
+  overflow: hidden;
+  background: white;
+  box-shadow: 0 0 15px rgba(0,0,0,0.2);
+  margin-bottom: 32px;
+}
+
+.card-event > img {
+  height: 200px;
+  width: 100%;
+  object-fit: cover;
+}
+
+.card-event h2 {
+  font-size: 16px;
+  font-weight: bold;
+  margin: 0;
+}
+
+.card-event h3 {
+  font-size: 12px;
+  opacity: .7;
+  margin: 0;
+  margin-top: 6px;
+}
+
+.card-event .card-event-details {
+  padding: 14px;
+  height: 80px;
+}
+
+
+// .card-trip .card-trip-infos {
+//   padding: 16px;
+//   display: flex;
+//   justify-content: space-between;
+//   align-items: flex-end;
+//   position: relative;
+// }
+
+
