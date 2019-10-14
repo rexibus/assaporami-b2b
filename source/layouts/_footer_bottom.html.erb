@@ -1,6 +1,21 @@
   <div class="footer">
     <div class="row footer-bottom">
-      <div class="col-12 col-md-8 d-flex justify-content-center footer-bottom-links">
+      <div class="col-12 col-md-4 d-flex justify-content-center footer-scaricalapp navbar-rospigliosi">
+
+        <div class="d-flex align-items-center">
+          <p>SCARICA L'APP</p>
+          <% link_to "index.html", class: "footer-brand" do %>
+            <%= image_tag "ios.svg" %>
+          <!-- https://www.kisspng.com/png-logo-brand-number-1942775/ -->
+          <% end %>
+          <% link_to "index.html", class: "footer-brand" do %>
+            <%= image_tag "android.svg" %>
+          <!-- https://www.kisspng.com/png-logo-brand-number-1942775/ -->
+          <% end %>
+        </div>
+
+      </div>
+      <div class="col-12 col-md-4 d-flex justify-content-center footer-bottom-links">
 
           <div class="footer-links">
             <a href="https://www.facebook.com/assaporami/"><i class="fab fa-facebook"></i></a>
