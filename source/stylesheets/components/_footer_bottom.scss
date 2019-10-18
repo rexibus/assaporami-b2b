@@ -1,5 +1,11 @@
-.footer-bottom {
+.footer-bottom-inner {
   background: #202020;
+  padding-top: 16px;
+  padding-bottom: 16px;
+}
+
+.footer-bottom {
+  background: transparent;
   height: 56px;
   display: flex;
   align-item: center;
