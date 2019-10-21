@@ -1,22 +1,24 @@
 <div class="footer-bottom-inner">
   <div class="container mb-0 pb-0">
     <div class="row footer-bottom">
-      <div class="col-12 col-md-4 footer-scaricalapp navbar-rospigliosi">
+      <div class="col-12 col-md-5 col-lg-4 col-xl-4">
 
-        <h5>SCARICA L'APP</h5>
-        <div class="d-flex align-items-center">
-          <% link_to "https://apps.apple.com/app/id1136241622", class: "footer-brand" do %>
-            <%= image_tag "ios.svg" %>
-          <!-- https://www.kisspng.com/png-logo-brand-number-1942775/ -->
-          <% end %>
-          <% link_to "https://play.google.com/store/apps/details?id=com.assaporami.assaporami", class: "footer-brand" do %>
-            <%= image_tag "android.svg" %>
-          <!-- https://www.kisspng.com/png-logo-brand-number-1942775/ -->
-          <% end %>
+        <h5 class="text-center">SCARICA L'APP</h5>
+        <div class="d-flex align-items-center justify-content-around">
+          <div>
+            <% link_to "https://apps.apple.com/app/id1136241622", class: "footer-brand" do %>
+              <%= image_tag "ios.svg" %>
+            <!-- https://www.kisspng.com/png-logo-brand-number-1942775/ -->
+            <% end %>
+            <% link_to "https://play.google.com/store/apps/details?id=com.assaporami.assaporami", class: "footer-brand" do %>
+              <%= image_tag "android.svg" %>
+            <!-- https://www.kisspng.com/png-logo-brand-number-1942775/ -->
+            <% end %>
+          </div>
         </div>
 
       </div>
-      <div class="col-12 col-md-4 d-flex justify-content-center footer-bottom-links">
+      <div class="col-12 col-md-3 col-lg-4 col-xl-4 d-flex justify-content-center footer-bottom-links">
 
           <div class="footer-links">
             <a href="https://www.facebook.com/assaporami/"><i class="fab fa-facebook"></i></a>
@@ -26,7 +28,7 @@
           </div>
 
       </div>
-      <div class="col-12 col-md-4 d-flex justify-content-center footer-copyright">
+      <div class="col-12 col-md-4 col-lg-4 col-xl-4 d-flex justify-content-center footer-copyright">
         <div class="d-flex align-items-center">
             <i class="far fa-copyright"></i>
             <p>2019 - Assaporami Srl | Credit: <%= link_to "Regis Weill", "http://www.weill.it", id: "credit_link" %></p>
