@@ -1,29 +1,33 @@
-<div class="col-12 col-md-8 form">
-  <form class="form" id="contactform" action="https://formspree.io/xbjrqzpr" method="POST">
-    <h5 class="mb-14">INSERISCI I TUOI DATI PER METTERTI IN CONTATTO E RICEVERE L'OFFERTA PIU ADATTA ALLA TUA AZIENDA</h5>
-    <div class="form-row">
-      <div class="col-4 form-group">
-        <fieldset class="field">
-          <input class="input form-control" type="email" name="_replyto" placeholder="esempio@domain.com" id="_replyto" required>
-        </fieldset>
-      </div>
+<div class="container">
+  <div class="row justify-content-center">
+    <div class="col-12 col-md-8 form">
+      <form class="form" id="contactform" action="https://formspree.io/xbjrqzpr" method="POST">
+        <p class="mb-14">INSERISCI I TUOI DATI PER METTERTI IN CONTATTO E RICEVERE L'OFFERTA PIU ADATTA ALLA TUA AZIENDA</p>
+        <div class="form-row d-flex">
+          <div class="col-lg-4 col-sm-12 form-group">
+            <fieldset class="field">
+              <input class="input form-control" type="email" name="_replyto" placeholder="esempio@domain.com" id="_replyto" required>
+            </fieldset>
+          </div>
 
-      <div class="col-4 form-group">
-        <fieldset class="field">
-          <input class="input form-control" type="text" name="company" placeholder="Azienda" id="company" required>
+          <div class="col-lg-4 col-sm-12 form-group">
+            <fieldset class="field">
+              <input class="input form-control" type="text" name="company" placeholder="Azienda" id="company" required>
+            </fieldset>
+          </div>
+          <div class="col-lg-4 col-sm-12 form-group">
+            <fieldset class="field">
+              <input class="input form-control" type="text" name="num_tel" placeholder="Numero di telefono" id="num_tel" required>
+            </fieldset>
+          </div>
+        </div>
+
+        <input class="hidden" type="text" name="_gotcha" style="display:none">
+        <input class="hidden" type="hidden" name="_subject" value="Message via http://domain.com">
+        <fieldset class="center">
+          <input class="submit btn btn-simple-contact" type="submit" value="CONTATTACI">
         </fieldset>
-      </div>
-      <div class="col-4 form-group">
-        <fieldset class="field">
-          <input class="input form-control" type="text" name="num_tel" placeholder="Numero di telefono" id="num_tel" required>
-        </fieldset>
-      </div>
+      </form>
     </div>
-
-    <input class="hidden" type="text" name="_gotcha" style="display:none">
-    <input class="hidden" type="hidden" name="_subject" value="Message via http://domain.com">
-    <fieldset class="field">
-      <input class="submit btn btn-contact" type="submit" value="CONTATTACI">
-    </fieldset>
-  </form>
+  </div>
 </div>
