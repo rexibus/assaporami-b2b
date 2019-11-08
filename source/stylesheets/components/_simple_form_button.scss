@@ -6,10 +6,20 @@
   font-weight: bolder;
   background: none;
   float: center;
+  color: inherit;
 }
 
 .btn-simple-contact:hover {
   text-decoration: none;
   color: white;
   background: #0A0A0A;
+}
+
+.btn-simple-contact:active {
+  text-decoration: none;
+  color: inherit;
+ }
+
+#py14-px22 {
+  padding: 12px 22px;
 }
