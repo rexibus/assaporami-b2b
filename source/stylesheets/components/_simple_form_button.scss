@@ -1,18 +1,18 @@
 .btn-simple-contact {
   font-size: 14px;
-  border: 2px solid #0A0A0A;
+  border: 2px solid $assa-green;
   padding: 14px 22px;
   border-radius: 3px;
   font-weight: bolder;
-  background: none;
+  background: $assa-green;
   float: center;
-  color: inherit;
+  color: white;
 }
 
 .btn-simple-contact:hover {
   text-decoration: none;
-  color: white;
-  background: #0A0A0A;
+  color: $assa-green;
+  background: none;
 }
 
 .btn-simple-contact:active {
