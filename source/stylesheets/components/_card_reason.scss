@@ -2,27 +2,58 @@
   margin-top: 56px;
 }
 
-.card-reason {
-  overflow: hidden;
-  background: white;
-  box-shadow: 0 0 15px rgba(0,0,0,0.2);
+.flip-card-reason {
+  background-color: transparent;
+  width: 300px;
+  height: 200px;
   margin-bottom: 32px;
 }
 
-.card-reason-hat {
-  height: 40px;
-  margin-top: 16px;
-  padding: 8px;
+.card-reason-inner {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  // text-align: center;
+  transition: transform 0.8s;
+  transform-style: preserve-3d;
 }
 
-.card-reason-title {
-  text-align: center;
+/* Do an horizontal flip when you move the mouse over the flip box container */
+.flip-card-reason:hover .card-reason-inner {
+  transform: rotateY(180deg);
 }
 
-.card-reason-text {
+/* Position the front and back side */
+.card-reason-front, .card-reason-back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  backface-visibility: hidden;
+}
+
+/* Style the front side */
+.card-reason-front {
+  overflow: hidden;
+  background: white;
+  box-shadow: 0 0 15px rgba(0,0,0,0.2);
   display: flex;
-  height: 140px;
   align-items: center;
+  padding: 18px;
+}
+
+/* Style the back side */
+.card-reason-back {
+  background-color: $assa-green;
+  color: white;
+  transform: rotateY(180deg);
+  box-shadow: 0 0 15px rgba(0,0,0,0.2);
+  display: flex;
+  align-items: center;
+  padding: 24px;
+}
+
+.card-reason-back > p {
+  color: white;
 }
 
 .card-business-green {
