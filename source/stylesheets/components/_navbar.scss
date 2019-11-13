@@ -14,8 +14,13 @@
   flex-grow: 0;
 }
 
+.navbar-brand {
+  margin: 0px;
+  padding: 0px;
+}
+
 .navbar-rospigliosi .navbar-brand img {
-  width: 40px;
+  width: 140px;
 }
 
 #nav-color {
