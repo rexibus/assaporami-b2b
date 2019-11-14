@@ -24,11 +24,13 @@
 }
 
 #nav-color {
-
   color: #101010;
 
     &:hover {
       opacity: 0.6;
     }
+}
 
+#brand-border {
+  border-bottom: 3px solid #7AE831;
 }
