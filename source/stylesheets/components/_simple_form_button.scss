@@ -23,3 +23,25 @@
 #py14-px22 {
   padding: 12px 22px;
 }
+
+.btn-simple-contact-right {
+  font-size: 14px;
+  border: 2px solid $assa-green;
+  padding: 14px 22px;
+  border-radius: 3px;
+  font-weight: bolder;
+  background: $assa-green;
+  float: right;
+  color: white;
+}
+
+.btn-simple-contact-right:hover {
+  text-decoration: none;
+  color: $assa-green;
+  background: none;
+}
+
+.btn-simple-contact-right:active {
+  text-decoration: none;
+  color: inherit;
+ }
