@@ -2,33 +2,41 @@
 title: Assaporami - Contatti per dipendenti
 ---
 
-<div class="wrapper">
+<div class="banner bg-light-gray border-top">
 
-  <div class="container pt-5 pb-16">
-    <div class="row d-flex justify-content-between">
-        <div class="col-12 col-md-4 contact-details">
-          <h5>CONTATTI</h5>
-          <p>
-            Assaporami <br>
-            Via Mac Mahon, 46 <br>
-            20155 Milano - IT <br>
-            Tel. +39 0236704143 <br>
-            info@assaporami.it <br>
-          </p>
-        </div>
+  <div class="container padding-top-bottom">
+    <div class="content-presentation-title">
+      <h3 class="text-center">Desideri avere di pranzi freschi, buoni e sani? </h3>
+    </div>
+    <div class="content-presentation-subtitle">
+      <h6>Saremmo molto lieti di cucinare per te ! Ma prima, cerchiamo di convincere il responsabile della tua azienda.</h6>
+    </div>
 
+    <hr align="center" width="10%">
+
+    <div class="content-presentation-text-title">
+      <p><strong>Ecco come funziona:</strong></p>
+    </div>
+
+    <div class="content-presentation-text mb-5">
+      <p class="font-weight-light"><strong>1 - </strong>Compila il modulo qui sotto per dirci dove lavori. <strong>2 - </strong>Entreremo in contatto con la tua azienda. <strong>3 - </strong>Per ringraziarti ti manderemo un piccolo omaggio quando inizierà il servizio. Non esitare a dire ai tuoi colleghi di fare lo stesso, più richieste avremmo, e più ci sarà facile convincere il tuo responsabile !</p>
+    </div>
+
+    <div class="row d-flex justify-content-center">
+
+        <!-- form -->
         <div class="col-12 col-md-8 form">
           <form class="form" id="contactform" action="//formspree.io/info@olimpiarospigliosi.it" method="POST">
-            <h5 class="mb-14">SCRIVETECI</h5>
+            <h5 class="mb-3">SCRIVETECI</h5>
             <div class="form-row">
               <div class="col-6 form-group">
                 <fieldset class="field">
-                  <input class="input form-control" type="text" name="first_name" placeholder="Nome" id="first_name" required>
+                  <input class="input form-control" type="text" name="first_name" placeholder="Il tuo nome" id="first_name" required>
                 </fieldset>
               </div>
               <div class="col-6 form-group">
                 <fieldset class="field">
-                  <input class="input form-control" type="text" name="last_name" placeholder="Cognome" id="last_name" required>
+                  <input class="input form-control" type="text" name="last_name" placeholder="Il tuo cognome" id="last_name" required>
                 </fieldset>
               </div>
             </div>
@@ -36,7 +44,7 @@ title: Assaporami - Contatti per dipendenti
             <div class="form-row">
               <div class="col-6 form-group">
                 <fieldset class="field">
-                  <input class="input form-control" type="text" name="company" placeholder="Azienda" id="company" required>
+                  <input class="input form-control" type="text" name="company" placeholder="La tua azienda" id="company" required>
                 </fieldset>
               </div>
               <div class="col-6 form-group">
@@ -48,13 +56,32 @@ title: Assaporami - Contatti per dipendenti
 
             <div class="form-group">
               <fieldset class="field">
-                <input class="input form-control" type="email" name="_replyto" placeholder="esempio@domain.com" id="_replyto" required>
+                <input class="input form-control" type="email" name="_replyto" placeholder="la_tua_mail@domain.com" id="_replyto" required>
+              </fieldset>
+            </div>
+
+            <div class="form-row">
+              <div class="col-6 form-group">
+                <fieldset class="field">
+                  <input class="input form-control" type="text" name="first_name_manager" placeholder="Nome del responsabile da contattare" id="first_name_manager" required>
+                </fieldset>
+              </div>
+              <div class="col-6 form-group">
+                <fieldset class="field">
+                  <input class="input form-control" type="text" name="last_name_manager" placeholder="Cognome del responsabile da contattare" id="last_name_manager" required>
+                </fieldset>
+              </div>
+            </div>
+
+            <div class="form-group">
+              <fieldset class="field">
+                <input class="input form-control" type="email" name="_replyto_manager" placeholder="mail_del_responsabile_da_contattare@domain.com" id="_replyto_manager" required>
               </fieldset>
             </div>
 
             <div class="form-group">
               <fieldset class="field">
-               <textarea class="input form-control" name="message" rows="10" placeholder="Messaggio" id="message" required></textarea>
+               <textarea class="input form-control" name="message" rows="10" placeholder="C'è qualcosa che dovremmo sapere ? Lascia un messaggio, se vuoi." id="message" required></textarea>
                </fieldset>
             </div>
             <input class="hidden" type="text" name="_gotcha" style="display:none">
@@ -64,7 +91,7 @@ title: Assaporami - Contatti per dipendenti
             </fieldset>
           </form>
         </div>
-
+        <!-- .form -->
     </div><!-- row -->
   </div><!-- end container -->
 </div><!-- end wrapper -->
