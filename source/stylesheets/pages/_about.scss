@@ -131,3 +131,9 @@
 .profile {
   height: 972px;
 }
+
+.team-avatars {
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+}
