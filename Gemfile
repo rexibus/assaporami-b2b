@@ -13,4 +13,4 @@ gem 'pry-byebug', require: true
 gem 'font-awesome-sass', '~> 5.8', '>= 5.8.1'
 gem 'jquery-middleman'
 gem 'sass-rails'
-gem 'bootstrap', '~> 4.1.3'
+gem 'bootstrap', '~> 4.3.1'
